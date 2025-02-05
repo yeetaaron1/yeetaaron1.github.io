@@ -5,6 +5,7 @@ import compression from "vite-plugin-compression";
 import viteImagemin from "vite-plugin-imagemin";
 import { VitePWA } from "vite-plugin-pwa";
 import AutoImport from "unplugin-auto-import/vite";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 //import { VitePluginNode } from "vite-plugin-node";
 
 // Change this to your GitHub repository name
