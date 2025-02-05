@@ -1,5 +1,8 @@
-export default {
-    content: ["./index.html", "./src/**/*.{js,jsx}"],
-    theme: { extend: {} },
-    plugins: [],
-};
+import { defineConfig } from "windicss/helpers";
+
+export default defineConfig({
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+});

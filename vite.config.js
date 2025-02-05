@@ -5,14 +5,9 @@ import compression from "vite-plugin-compression";
 import viteImagemin from "vite-plugin-imagemin";
 import { VitePWA } from "vite-plugin-pwa";
 import AutoImport from "unplugin-auto-import/vite";
-//import { VitePluginNode } from "vite-plugin-node";
-
-// Change this to your GitHub repository name
-const repoName = "yeetaaron1.github.io"; 
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: `/${repoName}/`, // Set GitHub Pages base URL
   plugins: [
     react(),
     WindiCSS(),
@@ -33,7 +28,6 @@ export default defineConfig({
     AutoImport({
       imports: ["react", "react-router-dom"],
     }),
-    //...VitePluginNode({ adapter: "express", appPath: "./server/index.js" }),
   ],
   server: {
     port: 3000,
